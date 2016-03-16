@@ -5,6 +5,11 @@ import java.util.HashMap;
 public class MemberServiceImpl implements MemberService{
 
 	HashMap<String, MemberBean> map;
+	public MemberServiceImpl() {
+		// 생성자도 메소드이다.
+		
+		map = new HashMap<String, MemberBean>();
+	}
 	@Override
 	public void join(MemberBean member) {
 		// 회원가입

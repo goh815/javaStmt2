@@ -10,8 +10,7 @@ public class MemberController {
 		while(true){
 			System.out.println("[메뉴]1.회원가입 2.로그인 3.내 정보 보기 4. 내 정보 수정 5.종료");
 			switch (s.nextInt()) {
-			case 1:System.out.println("아이디, 비번, 이름, 생년월일, 주소입력"); 
-				MemberBean member = new MemberBean();
+			case 1:System.out.println("아이디, 비번, 이름, 주소, 생년월일 입력"); 
 				service.join(new MemberBean(s.next(),s.next(),s.next(),s.next(),s.nextInt()));
 				break;
 				

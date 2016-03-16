@@ -4,6 +4,11 @@ public class Celphon extends Phone{
 	private boolean portable; // 이동성 존재
 	private String move;
 
+	public Celphon() {
+		// TODO Auto-generated constructor stub
+		this.setPortable(true);
+	}
+	
 	public boolean isPortable() {
 		return portable;
 	}
@@ -26,6 +31,6 @@ public class Celphon extends Phone{
 
 	}
 	public String getCall() {
-		return this.getMove();
+		return super.getCall()+"동시에"+ this.getMove();
 	}
 }

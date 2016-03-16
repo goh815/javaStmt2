@@ -19,9 +19,11 @@ public class AndroidPhone extends Iphone {
 		super.setPortable(true);
 		super.setCall(name);
 		this.setSize(size);
-		this.data= 
-				super.setCompany();
-				super.isPortable();
+		this.data = 
+				super.getCompany() + "\t" + 
+				super.isPortable() + "\t" +
+				super.getCall() + "\t" + 
+				data + ": 메세지 전달";
 				
 	}
 
